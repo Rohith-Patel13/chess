@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="game-project.css">
+  <title>CHESS-GAME-PROJECT</title>
+  <script defer src="chess.js"></script>
+  <!--
+    "defer" anedi script start tag lo use cheyyakapothe HTML
+    Document execute avvadu or bottom of the body lo script
+    tag vaadaali.
+  -->  
+  <script defer src="click-handling-chess.js"></script>
+  <script defer src="pawn-law.js"></script>
+</head>
+
+
+<body>
+<div class="dad-container d-flex flex-row justify-content-center ">
+<div class="main-container">
+    <div class="file-a files">
+        <div class="square">
+            <img src="rookblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="rookwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    
+    <div class="file-b files">
+        <div class="square">
+            <img src="knightblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="knightwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-c files">
+        <div class="square">
+            <img src="bishopblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="bishopwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-d files">
+        <div class="square">
+            <img src="queenblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="queenwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-e files">
+        <div class="square">
+            <img src="kingblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="kingwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-f files">
+        <div class="square">
+            <img src="bishopblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="bishopwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-g files">
+        <div class="square">
+            <img src="knightblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="knightwhite.png" height="70px" width="70px"/>
+        </div>
+    </div>
+    <div class="file-h files">
+        <div class="square">
+            <img src="rookblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="pawnblack.png" height="70px" width="70px"/>
+        </div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square">
+            <img src="pawnwhite.png" height="70px" width="70px"/>
+        </div>
+        <div class="square">
+            <img src="rookwhite.png" height="70px" width="70px"/>
+        </div>
+</div>
+  </div>  
+</div>
+</body>
+</html>

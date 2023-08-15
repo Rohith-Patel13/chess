@@ -1,0 +1,107 @@
+
+
+.square{
+    background-color:#EEEED2;
+    height: 70px;
+    width: 70px;
+}
+
+.main-container{
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
+    /*
+    DISPLAY GRID ANEDI 12 COLUMNS OSTADI HORIZONTAL GAA BY DEFAULT,
+    "grid-template-columns: repeat(8,1fr)" ANTE OKA FRACTION UNIT LO 12 COLUMNS
+    UNTAY DAANTLO 8 COLUMNS SIDE BY SIDE OSTAY.
+    "grid-template-columns: repeat(4,2fr);" ANTE UPPER FRACTION UNIT LO 4
+    COLUMNS OCCUPY CHESTADI AND LOWER COLUMN LO 4 COLUMNS OCCUPY CHESTADI.
+    */
+    height: 560px;
+    width: 560px;
+    /*
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    */
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dad-container{
+    margin-top: 1rem;
+    /*To recap, the rem unit means "The root element's font-size" (rem stands for "root em").
+     The <li> elements inside the <ul> with a class of rems take their sizing from the root element
+      ( <html> )
+    */
+}
+/*
+.file-a .square:nth-of-type(even){
+    background-color: black;
+}
+.file-a .square:nth-of-type(odd){
+    background-color: #ffe9c5;
+}
+.file-b .square:nth-of-type(odd){
+    background-color: black;
+}
+.file-b .square:nth-of-type(even){
+    background-color: #ffe9c5;
+}
+.file-c .square:nth-of-type(even){
+    background-color: black;
+}
+.file-c .square:nth-of-type(odd){
+    background-color: #ffe9c5;
+}
+.file-d .square:nth-of-type(odd){
+    background-color: black;
+}
+.file-d .square:nth-of-type(even){
+    background-color: #ffe9c5;
+}
+.file-e .square:nth-of-type(even){
+    background-color: black;
+}
+.file-e .square:nth-of-type(odd){
+    background-color: #ffe9c5;
+}
+.file-f .square:nth-of-type(odd){
+    background-color: black;
+}
+.file-f .square:nth-of-type(even){
+    background-color: #ffe9c5;
+}
+.file-g .square:nth-of-type(even){
+    background-color: black;
+}
+.file-g .square:nth-of-type(odd){
+    background-color: #ffe9c5;
+}
+.file-h .square:nth-of-type(odd){
+    background-color: black;
+}
+.file-h .square:nth-of-type(even){
+    background-color: #ffe9c5;
+}
+*/
+
+.files:nth-of-type(odd) .square:nth-of-type(even){
+    background-color: rgb(186, 216, 12);
+}
+.files:nth-of-type(even) .square:nth-of-type(odd){
+    background-color: rgb(186, 216, 12);
+}
+
+
+.circle{
+    width: 30%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
